@@ -17,6 +17,6 @@ clipboard_content=$(pbpaste)
 
 encoded_text=$(echo "$clipboard_content" | base64)
 
-url=https://ray.so/#code=${encode_text}&theme=breeze&language=typescript&padding=32&darkMode=true&background=true"
+url="https://ray.so/#code=${encode_text}&theme=breeze&language=typescript&padding=32&darkMode=true&background=true"
 
-open "$url"
+open $url
