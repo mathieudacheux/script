@@ -17,9 +17,9 @@ clipboard_content=$(pbpaste)
 
 encoded_text=$(echo "$clipboard_content" | base64)
 
-encode_text=$(echo "$encoded_text" | sed -e 's/\//%2F/g' | sed -e 's/\+/%2B/g' | sed -e 's/=/%3D/g')
+encode_text=$(echo "$encoded_text" | sed -e 's/\//%2F/g' |sed -e 's/\+/%2B/g' | sed -e 's/=/%3D/g')
 
-url="https://ray.so/#code=${encode_text}&theme=breeze&language=typescript&padding=32&darkMode=true&background=true"
+url="https://ray.so/#code=${encode_text}&theme=tailwind&language=typescript&padding=32&darkMode=true&background=true"
 
 echo "$url" | pbcopy
 
